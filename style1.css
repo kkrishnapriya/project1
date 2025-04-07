@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d1b33b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background: linear-gradient(145deg, #f9e4b7, #fff8dc);
+    border: 3px solid #daa520;
+    padding: 40px 30px;
+    border-radius: 30px;
+    max-width: 700px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h1 {
+    font-size: 2.7em;
+    color: #b8860b;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.card p {
+    font-size: 1.15em;
+    color: #333;
+    line-height: 1.7;
+}
+
+.onam-img {
+    width: 450px;
+    max-width: 95%;
+    border-radius: 20px;
+    border: 4px solid #daa520;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}

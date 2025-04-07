@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      background-color:#e0f2fe;
+      color: #2b2b2b;
+      text-align: center; 
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      color: #1f3a60;
+      margin-top: 60px;
+      margin-bottom: 25px;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      color: #345c80;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: 20px auto;
+      line-height: 1.8;
+      color: #444;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      animation: fadeInUp 1.2s ease-in-out;
+      max-width: 300px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: #3b3b3b;
+    }
+
+    ul li::before {
+      content: '⟡';
+      margin-right: 10px;
+      color: #6499e9;
+    }
+
+    .return-home {
+      display: inline-block;
+      margin: 40px auto 60px;
+      padding: 12px 25px;
+      background-color: skyblue;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .return-home:hover {
+      background-color: #ffffff;
+      color: #007a74;
+      
+      
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Responsive max width */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About Me</h1>
+    <p>I'm  K Krishnapriya ,a dedicated web designer with a strong foundation in HTML and CSS. I specialize in creating visually appealing, responsive, and user-friendly websites that align with modern web standards.
+    My expertise lies in structuring clean and efficient code while ensuring seamless design and functionality across various devices. With a keen eye for aesthetics and usability, I focus on delivering elegant digital experiences that enhance user engagement.
+    I am passionate about transforming creative concepts into well-designed, intuitive web solutions that not only look great but also offer optimal performance. Explore my portfolio to discover my approach to design, my projects, and how I bring ideas to life through innovative front-end development.</p></p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Responsive Design</li>
+    </ul>
+
+    <h2>Tools & Tech Stack</h2>
+    <ul>
+      <li>VS Code</li>
+      <li>Canva</li>
+      <li>GitHub</li>
+    </ul>
+
+    <h2>Career Goals</h2>
+    <p>“I aim to become a full-stack developer and contribute to open-source design systems.”</p>
+
+    <a href="project1.html" class="return-home">Home</a>
+  </div>
+</body>
+</html>

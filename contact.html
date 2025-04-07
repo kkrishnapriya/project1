@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color:#e0f2fe;
+    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      padding: 40px 20px;
+    }
+
+    .box {
+      background-color:#317a94;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact-section {
+      background-color:#317a94;
+    }
+
+    h2, h3 {
+      font-family: 'DM Serif Display', serif;
+      text-align: center;
+      font-size: 2rem;
+      color:#1f2937;
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+      color:white;
+      font-size: 1em;
+      font-family: 'Inter', sans-serif;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px black;
+      background-color: white;
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      transform: translateY(-50%);
+      background:white;
+      padding: 0 6px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      color:black;
+      transition: 0.3s ease;
+      pointer-events: none;
+    }
+
+    input:focus + label,
+    input:not(:placeholder-shown) + label,
+    textarea:focus + label,
+    textarea:not(:placeholder-shown) + label {
+      top: -10px;
+      left: 10px;
+      font-size: 0.8em;
+    }
+
+    button {
+      padding: 12px;
+      background-color:white;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    button:hover {
+      background-color:#f3e8ff;
+      color:#0369a1;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 1em;
+      text-align: center;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color:white;
+      text-decoration: underline;
+    }
+
+    .return-home {
+      display: inline-block;
+      background-color:skyblue;
+      color:black;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .return-home:hover {
+      background-color: #f3e8ff;
+      color: #007a74;
+    }
+
+    @media screen and (max-width: 768px) {
+      h2, h3 {
+        font-size: 1.5rem;
+      }
+
+      input, textarea, button {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box contact-section">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" id="name" name="name" required placeholder=" " />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" required placeholder=" " />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="box alt-contact">
+      <h3>Other Ways to Connect</h3>
+      <ul>
+        <li>📧 <a href="mailto:kkrishnapriya177@email.com">kkrishnapriya177@gmail.com</a></li>
+        <li>💬 <a href="https://wa.me/919496636187" target="_blank">+91 94966 36187</a></li>
+        <li>🔗 <a href="https://linkedin.com/in/kkrishnapriya" target="_blank">linkedin.com/in/Krishnapriya</a></li>
+        <li>💻 <a href="https://github.com/kkrishnapriya" target="_blank">github.com/kkrishnapriya</a></li>
+      </ul>
+    </div>
+
+    <a href="file:///C:/Users/kkris/OneDrive/Desktop/project1.html" class="return-home">Home</a>
+  </div>
+
+</body>
+</html>
